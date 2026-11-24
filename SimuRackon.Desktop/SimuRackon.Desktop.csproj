@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SimuRackon</AssemblyName>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="TorreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TorreForm.Designer.cs">
+      <DependentUpon>TorreForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="TorreForm.resx">
+      <DependentUpon>TorreForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimuRackon.Core\SimuRackon.Core.csproj" />
+  </ItemGroup>
+</Project>
